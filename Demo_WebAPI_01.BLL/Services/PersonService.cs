@@ -73,7 +73,7 @@ namespace Demo_WebAPI_01.BLL.Services
             return nbDeleted == 1;
         }
 
-        public IEnumerable<Person> GetAll(int offset = 0, int limit = 10)
+        public IEnumerable<Person> GetAll(int offset, int limit)
         {
             // Gestion d'un offset plus haut que le nombre d'élément
             if(offset > _People.Count)

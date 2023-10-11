@@ -10,7 +10,7 @@ namespace Demo_WebAPI_01.BLL.Interfaces
     public interface IPersonService
     {
         Person? GetById(int id);
-        IEnumerable<Person> GetAll(int offset = 0, int limit = 10);
+        IEnumerable<Person> GetAll(int offset, int limit);
 
         Person Add(Person person);
         bool Delete(int id);
