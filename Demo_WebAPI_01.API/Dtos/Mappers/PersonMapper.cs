@@ -25,6 +25,19 @@ namespace Demo_WebAPI_01.API.Dtos.Mappers
             };
         }
 
+        public static Person ToModel(this PersonDataDto personData)
+        {
+            return new Person
+            {
+                // PersonId = 0  // Pas d'id à mapper -> Valeur par default (Optionnel)
+                Pseudo = personData.Pseudo,
+                Firstname = personData.Firstname,
+                Lastname = personData.Lastname,
+                BirthDate = personData.BirthDate,
+                Hobby = personData.Hobby
+            };
+        }
+
 
     }
 }
