@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Demo_WebAPI_01.BLL\Demo_WebAPI_01.BLL.csproj" />
   </ItemGroup>
 
 </Project>
